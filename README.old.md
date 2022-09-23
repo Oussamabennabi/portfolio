@@ -1,4 +1,0 @@
-- [] fantacy cursor 
-- [] react reveal
-- [] npm i react-animated-cursor
-- [] GSAP 
