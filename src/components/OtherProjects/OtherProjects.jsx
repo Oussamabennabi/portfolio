@@ -1,7 +1,7 @@
 
 const OtherProjects = () => {
   return (
-    <div>OtherProjects</div>
+    <section id="other-projects">OtherProjects</section>
   )
 }
 

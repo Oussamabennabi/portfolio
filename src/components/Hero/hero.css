@@ -1,0 +1,40 @@
+.hero {
+    background-color:var(--black);
+    color: var(--text-white);
+    user-select: none;
+}
+
+
+.hero .content {
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+
+}
+
+.sub-title {
+    color: var(--text-gray);
+    padding-bottom: 1.7rem;
+}
+
+p {
+    max-width: 590px;
+}
+.small-text {
+    color:var(--green) ;
+    font-size: large;
+    margin-bottom: 2rem;
+}
+
+.primary-button {
+   margin-top: 1.5rem;
+   color: var(--text-white);
+   padding: .4rem 2.5rem;
+   font-size: 1rem;
+   font-weight: 500;
+}
+.primary-button:hover {
+  background-color:#711fe4;
+}
+
