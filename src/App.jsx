@@ -1,13 +1,16 @@
 
 import AnimatedCursor from 'react-animated-cursor';
 import './App.css';
-import {Navbar,Hero,
-About,
-Projects,
-OtherProjects,
-Contact,
-RightBar,
-LeftBar} from './components'
+import {
+  Navbar,
+  Hero,
+  About,
+  Projects,
+  ProfessionalProjects,
+  Contact,
+  RightBar,
+  LeftBar,
+} from "./components";
 function App() {
   return (
     <>
@@ -17,19 +20,26 @@ function App() {
       <main className="App">
         <AnimatedCursor
           innerSize={5}
-          outerSize={40}
+          outerSize={46}
           innerStyle={{ backgroundColor: "white" }}
           color="255,255,255"
-          outerAlpha={.9}
+          outerAlpha={0.9}
           innerScale={0}
-          outerScale={1.7}
+          outerScale={1.4}
+          trailingSpeed={4}
           hasBlendMode={true}
-          outerStyle={{ mixBlendMode: "exclusion" }}
+          outerStyle={{
+            mixBlendMode: "exclusion",
+            // backgroundColor: "rgba(255, 255, 255, 0)",
+            // outline: "2px solid white",
+          }}
         />
         <Hero />
-        <About />
+        
+          <About />
+
+        <ProfessionalProjects />
         <Projects />
-        <OtherProjects />
         <Contact />
       </main>
     </>

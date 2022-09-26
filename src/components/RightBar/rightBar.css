@@ -2,14 +2,15 @@
 .rightbar {
     right: 0;
     padding-top:auto;
+    
 }
 
 .email-link {
     transform: rotate(90deg);
     margin-bottom: 8em;
+    font-weight: bold;
     color: white;
     transition: var(--transition);
-
 }
 .email-link:hover {
     transform:  translateY(-40%) rotate(90deg);

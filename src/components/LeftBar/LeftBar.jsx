@@ -1,7 +1,7 @@
 import React from "react";
 import "./leftBar.css";
 import { SiFrontendmentor } from "react-icons/si";
-import { RiGithubLine } from "react-icons/ri";
+import { FaGithubAlt } from "react-icons/fa";
 import { FiFacebook, FiLinkedin } from "react-icons/fi";
 
 const LeftBar = () => {
@@ -15,7 +15,7 @@ const LeftBar = () => {
               rel="noreferrer"
               href="https://github.com/Oussamabennabi"
             >
-              <RiGithubLine fill="#FFFFFF" />
+              <FaGithubAlt fill="#FFFFFF" />
             </a>
           </li>
           <li title="Facebook">

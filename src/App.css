@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --orange:#FF652F;
-    --yellow: #FFE400;
-    /* --green  : #14A76C; */
-    --green  : #14FEBC ;
+    --orange:#ED8D12;
+    --yellow: #ffbf00;
+    --green-light: #24DB98 ;
+    --green:#75C00C;
     --purple : #570CC0;
-     --pink :hsl(327, 89%, 40%); 
+     --pink :#c10b6f; 
     --black  : #0E0B16 ;
+    /* rgba(5, 5, 5, 0.493) */
+    --blue:#0040FF;
     /* --black  : #272727 ; */
     --toolsTextColor : #747474;
     --text-white:rgb(226, 226, 226);
@@ -40,7 +42,7 @@
 
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 
 }
 a {
@@ -51,6 +53,12 @@ a {
 button {
   border: none;
   background-color: transparent;
+}
+
+input,textarea {
+  outline: none;
+  background-color: transparent;
+  border: none;
 }
 
 .code-font {
@@ -69,7 +77,8 @@ ul {
 
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
     padding: 0 8rem;
 
 }
@@ -79,6 +88,13 @@ ul {
     max-width: 1024px;
     margin-inline: auto;
 }
+.section-header {
+  position: relative;
+    font-size: clamp(25px, 4vw, 50px);
+    text-align: left;
+}
+
+
 
 .bar {
     width:8rem ;
@@ -88,6 +104,7 @@ ul {
     flex-direction: column;
     top: 0;
     bottom: 0;
+    z-index: 50;
     position: fixed;
 }
 
@@ -107,6 +124,12 @@ ul {
 }
 }
 
+@media screen and (max-width:400px){
+    .container {
+    padding-inline: .1rem !important;
+    font-size: smaller !important;
+    }
+}
 .bar .line {
     width: 2px;
     height: 5rem;
@@ -133,7 +156,6 @@ ul {
 .primary-button .shiny-container {
     position: relative;
     width: 100%;
-    background-color: red;
 }
 
 .primary-button .shiny-container .shiny {
@@ -239,79 +261,23 @@ ul {
 
 
 /*  my name */
-.my-name .char.animated {
+ .char.animated {
     display: inline-block;
     animation: spring 800ms ease-in-out ;
 }
 
-.my-name .char {
+ .char {
   margin-right: .2rem;
   transition: var(--transition);
 }
 
-.my-name .space {
+ .space {
     display: inline-block;
     width: .9rem;
     pointer-events: none;
 }
 
-.my-name .char:hover:nth-child(0) {
-    color: var(--green);
-}
-
-.my-name .char:hover:nth-child(1) {
-    color: var(--purple);
-}
-.my-name .char:hover:nth-child(2) {
-    color: var(--orange);
-}
-.my-name .char:hover:nth-child(3) {
-    color: var(--pink);
-}
-.my-name .char:hover:nth-child(4) {
-    color: var(--yellow);
-}
-.my-name .char:hover:nth-child(5) {
-    color: var(--orange);
-}
-.my-name .char:hover:nth-child(6) {
-    color: var(--pink);
-}
-.my-name .char:hover:nth-child(7) {
-    color: var(--green);
-}
-.my-name .char:hover:nth-child(8) {
-    color: var(--yellow);
-}
-.my-name .char:hover:nth-child(9) {
-    color: var(--purple);
-}
-
-.my-name .char:hover:nth-child(10) {
-    color: var(--pink);
-}
-.my-name .char:hover:nth-child(11) {
-    color: var(--yellow);
-}
-.my-name .char:hover:nth-child(12) {
-    color: var(--orange);
-}
-
-.my-name .char:hover:nth-child(13) {
-    color: var(--purple);
-}
-
-.my-name .char:hover:nth-child(14) {
-    color: var(--pink);
-}
-.my-name .char:hover:nth-child(15) {
-    color: var(--yellow);
-}
-.my-name .char:hover:nth-child(16) {
-    color: var(--orange);
-}
-
-
+ 
 /* NAVBAR */
 
 .link-number {

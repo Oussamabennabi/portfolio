@@ -1,18 +1,18 @@
 nav {
     position: fixed;
     color: var(--text-white);
+    font-weight: 600;
     height: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
+    background-color: rgba(14, 11, 22, 0.5);
+    backdrop-filter: blur(5px);
+    transition: var(--transition);
 }
-nav.open{ 
-    height: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
+
 
 .nav-container {
     display: flex;
@@ -35,12 +35,68 @@ nav.open{
     padding: .2rem 1.4rem;
 }
 
-.mobile-links {
-    display: none;
+nav .logo{ 
+    position: fixed;
+    top: 25px;
 }
 
 
+.nav-container-mobile .mobile-links {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.nav-container-mobile .mobile-links li{
+    position: relative;
+    overflow: hidden;
+    font-size:clamp(20px, 5vw, 60px);
+}
+.nav-container-mobile .mobile-links li::before {
+    content: "";
+    position: absolute;
+    top: 90%;
+    right: 0;
+    height: 4px;
+    width: 50%;
+    transition: var(--transition);
+}
+.nav-container-mobile .mobile-links li:nth-child(1):before {
+    background-color: var(--purple);
 
+}
+.nav-container-mobile .mobile-links li:nth-child(2):before {
+    background-color: var(--yellow);
+
+}
+.nav-container-mobile .mobile-links li:nth-child(3):before {
+    background-color: var(--blue);
+}
+
+.nav-container-mobile .mobile-links li:nth-child(4):before {
+    background-color: var(--pink);
+
+}
+
+.nav-container-mobile .mobile-links li::before {
+    right: 100%;
+}
+.nav-container-mobile .mobile-links li:hover::before {
+    right: 0;
+    width: 100%;
+}
+
+.nav-container-mobile {
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: var(--transition);
+}
 
 @media screen and (max-width:1080px){
     .nav-container {
@@ -48,9 +104,25 @@ nav.open{
     }
 }
 
-@media screen and (max-width:789px){
+@media screen and (max-width:886px){
+    nav.open{ 
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    backdrop-filter: blur(7px);
+}
+
     .nav-container .desktop-links{
         display: none;
     }
+    
+.nav-container-mobile.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
   
 }
+

@@ -2,6 +2,7 @@
     background-color:var(--black);
     color: var(--text-white);
     user-select: none;
+    position: relative;
 }
 
 
@@ -10,7 +11,8 @@ display: flex;
 justify-content: center;
 align-items: flex-start;
 flex-direction: column;
-
+padding-inline: 1rem;
+min-height: 100vh;
 }
 
 .sub-title {
@@ -38,3 +40,19 @@ p {
   background-color:#711fe4;
 }
 
+.primary-button:after  {
+   background-color:var(--purple);
+
+}
+.primary-button:before  {
+   background-color:var(--green);
+
+}
+.primary-button .button-text:before {
+   background-color:var(--blue);
+
+}
+.primary-button .button-text:after {
+   background-color:var(--yellow);
+    
+}

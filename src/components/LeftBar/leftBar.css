@@ -23,11 +23,13 @@
 .leftbar ul li a svg {
     font-size: 1.8rem;
     transition: var(--transition);
-
+    stroke: white;
+    stroke-width: 1px;
 }
 
 
 .leftbar ul li:hover a svg {
     scale: 1.3;
     fill: var(--green);
+    stroke: transparent;
 }

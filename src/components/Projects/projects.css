@@ -1,0 +1,60 @@
+.projects {
+    position: relative;
+    background-color: var(--blue);
+    height: 100%;
+     padding-top: 10rem;
+    padding-bottom: 10rem;
+    user-select: none;
+    padding-inline:8rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* TRY DELET?ING THIS IF ADDING THE DESC COUSE A PROBLEM */
+    grid-template-rows: repeat(4,1fr);
+    gap: 1.2rem;
+    transition: var(--transition);
+    
+}
+.section-header {
+  margin-bottom: 3.5rem;
+  color: var(--text-white);
+
+}
+.section-header .link-number {
+    color: var(--yellow);
+
+}
+
+
+
+@media screen and (max-width:1310px) {
+    .projects-container {
+        grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(6,1fr);
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .projects {
+    padding-inline:6rem;
+
+    }
+}
+/* 789px */
+
+@media screen and (max-width:789px) {
+    .projects {
+    padding-inline:2.5rem;
+
+    }
+}
+@media screen and (max-width:637px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    grid-template-rows: repeat(11,1fr);
+
+    }
+}

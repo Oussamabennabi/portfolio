@@ -1,0 +1,50 @@
+.professionalProjects {
+    background-color: var(--yellow);
+        height: 100%;
+    user-select: none;
+    padding-inline:8rem;
+         padding-top: 10rem;
+    padding-bottom: 10rem;
+
+
+}
+
+.professionalProjects .section-header .link-number{
+    color: var(--blue) ;
+}
+.professionalProjects .section-header {
+    color: var(--black);
+}
+
+.pro-projects-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1000px) {
+    .professionalProjects {
+    padding-inline:6rem;
+
+    }
+}
+
+@media screen and (max-width:789px) {
+    .professionalProjects {
+    padding-inline:2.5rem;
+
+    }
+}
+@media screen and (max-width:637px) {
+    .pro-projects-container {
+        grid-template-columns: 1fr;
+    }
+}

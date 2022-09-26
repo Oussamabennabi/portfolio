@@ -1,11 +1,14 @@
 
 .hamburglar {
   transform: scale(1);
-  position: relative;
   display: none;
+  position: absolute;
+  right: 1.5rem;
+  top: .4rem;
   width: 68px;
   height: 68px;
   z-index: 1000;
+
   -webkit-touch-callout: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -512,7 +515,7 @@
 
 
 
-@media screen and (max-width:789px){
+@media screen and (max-width:886px){
     
     .hamburglar {
         display: block;

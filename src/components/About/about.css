@@ -1,0 +1,54 @@
+.about {
+    background-color:var(--purple);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    color: var(--text-white);
+}
+
+.about .content {
+    padding-inline: 1rem;
+}
+
+.about .content .hello-world {
+    font-size: 1.8rem;
+}
+
+.about .content .aboutMe-text {
+    font-size: 1.3rem;
+}
+
+.skills-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.skills-container .intrest {
+    margin-right: auto;
+    margin-left: auto;
+}
+.skills-container h4{
+    margin-bottom: .7em;
+}
+.skills-container .intrest .intrest-list li,.skills-container .skills .skills-list li{
+    margin-bottom: .4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.skills-container .intrest .intrest-list svg,.skills-container .skills .skills-list svg {
+    margin-right: .4rem;
+    fill: var(--yellow);
+    font-size: 1.3rem;
+}
+
+
+@media screen and (max-width:935px){
+.skills-container .intrest {
+    margin-right: 0;
+    margin-left: 0;
+}
+}
