@@ -38,7 +38,7 @@ const Navbar = () => {
           </li>
           <a
             className=""
-            href="../../files/Oussama_Bennabi_Resume_24-09-2022-11-19-59.pdf"
+            href="../../files/Oussama_Bennabi_Resume.pdf"
             download
           >
             <button className="primary-button ">
@@ -80,7 +80,7 @@ const Navbar = () => {
           <a
             onClick={() => setHidden(true)}
             className=""
-            href="../../files/Oussama_Bennabi_Resume_24-09-2022-11-19-59.pdf"
+            href="../../files/Oussama_Bennabi_Resume.pdf"
             download
           >
             <button className="primary-button ">
