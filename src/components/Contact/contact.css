@@ -62,6 +62,12 @@
 .contact-form .primary-button {
 width: fit-content;
 margin-bottom: 4rem;
+background-color: var(--yellow);
+color: var(--black);
+}
+
+.contact-form .primary-button:hover {
+background-color: #ffbf00d2;
 }
 .contact-form h4 {
 color: var(--text-white);

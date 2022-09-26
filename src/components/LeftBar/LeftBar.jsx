@@ -37,10 +37,9 @@ const LeftBar = () => {
               <FiLinkedin fill="#FFFFFF" />
             </a>
           </li>
-          <li>
+          <li title="Frontendmentor">
             <a
               target={"_blank"}
-              title="tor"
               href="https://www.frontendmentor.io/profile/Oussamabennabi"
               rel="noreferrer"
             >

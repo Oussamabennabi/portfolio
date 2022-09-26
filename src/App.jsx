@@ -1,6 +1,5 @@
-
-import AnimatedCursor from 'react-animated-cursor';
-import './App.css';
+import AnimatedCursor from "react-animated-cursor";
+import "./App.css";
 import {
   Navbar,
   Hero,
@@ -26,25 +25,20 @@ function App() {
           outerAlpha={0.9}
           innerScale={0}
           outerScale={1.4}
-          trailingSpeed={4}
+          trailingSpeed={3.5}
           hasBlendMode={true}
           outerStyle={{
             mixBlendMode: "exclusion",
-            // backgroundColor: "rgba(255, 255, 255, 0)",
-            // outline: "2px solid white",
           }}
         />
         <Hero />
-        
-          <About />
-
+        <About />
         <ProfessionalProjects />
         <Projects />
         <Contact />
       </main>
     </>
   );
-  
 }
 
 export default App;

@@ -3,6 +3,7 @@
     color: var(--text-white);
     user-select: none;
     position: relative;
+    /* padding-top: 5rem; */
 }
 
 
@@ -22,6 +23,7 @@ min-height: 100vh;
 
 p {
     max-width: 590px;
+    font-size: clamp(1rem,3vw,1.3rem);
 }
 .small-text {
     color:var(--green) ;

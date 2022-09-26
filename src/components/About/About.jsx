@@ -3,6 +3,7 @@ import CoolText from "../ui/CoolText";
 import "./about.css"
 import { BsMusicNoteList } from "react-icons/bs";
 import { IoLogoJavascript } from "react-icons/io";
+import {BiHappyBeaming} from 'react-icons/bi'
 import { SiYoutubegaming, SiMongodb } from "react-icons/si";
 import { GiStoneBlock } from 'react-icons/gi'
 import {FaReact,
@@ -17,29 +18,35 @@ const About = () => {
             <span className="link-number">01. </span>
             <CoolText text={"About Me."} />
           </h2>
+          {/* <div className="image">
+            <img src="me.jpg" alt="" />
+          </div> */}
+          {/* About Me Text */}
           <p className="aboutMe-text">
             <span className="hello-world">Hello! </span>
-            my name is oussama and Im passioant about creating new things that
-            lives in the internet. I work very hard to achive my goals and ideas
-            that comes into my mind.
+            My name is oussama, and I'm passionate about creating new things
+            that live on the internet. I work very hard to achieve the goals and
+            ideas that come to my mind, and also curious about how tricky things
+            work.
             <br />
-            Im also curios how tricky things work
             <br />
-            <br />
-            In my journey I have built a lot of websites that tough me a lot
-            about web development, and now I feel comftobal working with
-            JavaScript and its libararies and React framework. 
-            {/* IM NOT LIMITED TO JUST THIS TECHNOLOGIES */}
-            Im a self-though developer and college-though engineerer Im always
-            motivated to learn new technologies
+            In my journey, I have built many websites that taught me a lot about
+            web development, and now I feel comftable working with JavaScript
+            and its libraries and React framework.
+            <br /> <br />
+            <span className="motivation">
+              <BiHappyBeaming className="smily-face" />
+              motivation keeps me going forward.
+            </span>
           </p>
+          {/* SKILLS */}
           <div className="skills-container">
             <div className="skills">
               <h4>
                 technologies I’ve been working with recently (Not Limited)
               </h4>
               <ul className="skills-list">
-                <li >
+                <li>
                   <IoLogoJavascript />
                   JavaScript (ES6+)
                 </li>

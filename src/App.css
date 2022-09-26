@@ -26,6 +26,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -142,6 +144,8 @@ ul {
 .primary-button {
   background:var(--purple);
   line-height: 42px;
+font-weight: 800 !important;
+
   padding: 0;
   border: none;
   border-radius: .5rem;

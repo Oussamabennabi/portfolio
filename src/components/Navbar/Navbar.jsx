@@ -6,9 +6,13 @@ const Navbar = () => {
   return (
     <nav className={`${!hidden && "open"}`}>
       <div className={`${!hidden && "open"} nav-container`}>
-        <div className="logo">O</div>
+        <div className="logo">
+          <img src="Logo.png" alt="" />
+        </div>
         <div className="hidden-div"></div>
-        <Hamburger setHidden={setHidden} hidden={hidden} />
+        <button title="menu" onClick={() => setHidden(!hidden)}>
+          <Hamburger hidden={hidden} />
+        </button>
         {/* Desktop links */}
         <ul className="desktop-links">
           <li className="link">

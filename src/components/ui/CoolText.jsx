@@ -7,11 +7,12 @@ const CoolText = ({ text}) => {
         arr.push(char)
     }
     return <>
-        {arr.length && arr.map((char, i) => {
+        { arr.map((char, i) => {
             if (char === " ") {
-                return <div className='space'></div>
+                return <div key={i} className='space'></div>
             } else {
               return <span
+                key={i}
                 onMouseEnter={(e) => (e.target.className = "char animated")}
                 onMouseLeave={(e) =>
                   setTimeout(() => {

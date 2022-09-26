@@ -14,9 +14,71 @@
 }
 
 .about .content .aboutMe-text {
-    font-size: 1.3rem;
+    font-size: clamp(1.1rem,3vw,1.3rem);
+
+}
+.image {
+    position: absolute;
+    top: 9em ;
+    
+    width: 200px;
+    height: 200px;
+    right: 8rem;
+    transition: var(--transition);
+}
+.image:hover {
+    box-shadow:7px 7px 0px 4px var(--yellow) ;
+}
+.image:hover::before {
+    background-color: transparent;
+}
+.image img {
+    position: relative;
+    aspect-ratio: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 17, 255, 0.158);
+    inset: 0;
+    width: 100%;
+    z-index: 3;
+    transition: var(--transition);
 }
 
+@media screen and (max-width:1284px) {
+    .image {
+        right: 7.8rem;
+    }
+}
+@media screen and (max-width:1255px) {
+    .image {
+        right: 7rem;
+    }
+}
+@media screen and (max-width:1220px) {
+    .image {
+        right: 6.7rem;
+    }
+}
+@media screen and (max-width:1240px) {
+    .image {
+        right: 3.5rem;
+    }
+}
+@media screen and (max-width:1150px) {
+    .skills-container {
+        margin-bottom: 10rem;
+    }
+    .image {
+        top: 105%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
 .skills-container {
     margin-top: 2rem;
     display: flex;
@@ -32,6 +94,7 @@
 }
 .skills-container h4{
     margin-bottom: .7em;
+    font-size: 1.2rem;
 }
 .skills-container .intrest .intrest-list li,.skills-container .skills .skills-list li{
     margin-bottom: .4rem;
@@ -45,8 +108,19 @@
     font-size: 1.3rem;
 }
 
+.motivation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .4rem;
+}
 
-@media screen and (max-width:935px){
+.motivation .smily-face {
+    fill: var(--yellow);
+    font-size: 1.4rem;
+
+}
+@media screen and (max-width:1070px){
 .skills-container .intrest {
     margin-right: 0;
     margin-left: 0;

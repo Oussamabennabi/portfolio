@@ -13,6 +13,20 @@ nav {
     transition: var(--transition);
 }
 
+nav .logo{ 
+    position: fixed;
+    left: -1.4rem;
+    top: -.6rem;
+}
+nav .logo img { 
+    width: 100%;
+    height: 100%;
+    transform: scale(.4);
+}
+
+
+
+
 
 .nav-container {
     display: flex;
@@ -34,13 +48,6 @@ nav {
     margin: 0;
     padding: .2rem 1.4rem;
 }
-
-nav .logo{ 
-    position: fixed;
-    top: 25px;
-}
-
-
 .nav-container-mobile .mobile-links {
     margin: auto;
     display: flex;
@@ -104,7 +111,7 @@ nav .logo{
     }
 }
 
-@media screen and (max-width:886px){
+@media screen and (max-width:980px){
     nav.open{ 
     height: 100%;
     justify-content: flex-start;
