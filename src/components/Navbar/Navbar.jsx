@@ -6,9 +6,12 @@ const Navbar = () => {
   return (
     <nav className={`${!hidden && "open"}`}>
       <div className={`${!hidden && "open"} nav-container`}>
-        <div className="logo">
+      <a href="/">
+      <div className="logo">
           <img src="Logo.png" alt="" />
         </div>
+      </a>
+        
         <div className="hidden-div"></div>
         <button title="menu" onClick={() => setHidden(!hidden)}>
           <Hamburger hidden={hidden} />
