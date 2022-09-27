@@ -10,7 +10,7 @@ const Hero = () => {
           <h1>
             <CoolText text={"Oussama Bennabi."} />
           </h1>
-          <h1 className="sub-title">I build things for the web.</h1>
+          <h2 className="sub-title">I build things for the web.</h2>
           <p>
             I’m a software engineer specializing in Front-end Development who writes clean,elegant and efficient code.
           </p>
