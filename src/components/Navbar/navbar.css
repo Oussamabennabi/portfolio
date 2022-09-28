@@ -17,6 +17,7 @@ nav .logo{
     position: fixed;
     left: -3rem;
     top: -.6rem;
+    z-index:200;
 }
 nav .logo img { 
     width: 100%;
