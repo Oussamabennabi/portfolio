@@ -1,12 +1,12 @@
 import "./projects.css";
 import { projects } from "../../data";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import CoolText from "../ui/CoolText";
 const Projects = () => {
   return (
     <section id="projects" className="container projects">
-      <Bounce bottom>
+      <Fade bottom>
         <div className="content">
           <h2 className="section-header">
             <span className="link-number">03. </span>
@@ -19,7 +19,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
-      </Bounce>
+      </Fade>
     </section>
   );
 };

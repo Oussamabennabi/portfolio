@@ -6,7 +6,7 @@ import { ReactComponent as Spiner } from "../../assets/spiner.svg";
 import emailjs from "@emailjs/browser";
 
 import { useRef, useState } from "react";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import CoolText from "../ui/CoolText";
 const Contact = () => {
 const [error, setError] = useState(false)
@@ -48,7 +48,7 @@ const [loading,setLoading] = useState(false)
  
   return (
     <section id="contact" className="container contact">
-      <Bounce bottom>
+      <Fade bottom>
         <div className="content">
           <h2 className="section-header">
             <span className="link-number">04. </span>
@@ -162,7 +162,7 @@ const [loading,setLoading] = useState(false)
             </footer>
           </div>
         </div>
-      </Bounce>
+      </Fade>
     </section>
   );
 }

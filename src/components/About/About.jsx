@@ -1,4 +1,4 @@
-import { Bounce } from "react-reveal"
+import { Fade } from "react-reveal"
 import CoolText from "../ui/CoolText";
 import "./about.css"
 import { BsMusicNoteList } from "react-icons/bs";
@@ -12,7 +12,7 @@ FaCss3} from "react-icons/fa"
 const About = () => {
   return (
     <section id="about" className="container about">
-      <Bounce bottom>
+      <Fade bottom>
         <div className="content">
           <h2 className="section-header">
             <span className="link-number">01. </span>
@@ -87,7 +87,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </Bounce>
+      </Fade>
     </section>
   );
 }

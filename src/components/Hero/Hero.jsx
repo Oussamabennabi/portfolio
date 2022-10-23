@@ -1,10 +1,10 @@
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import CoolText from "../ui/CoolText";
 import "./hero.css";
 const Hero = () => {
   return (
     <section id="hero" className="container hero">
-      <Bounce bottom>
+      <Fade bottom>
         <div className="content">
           <h5 className="code-font small-text">Hi, my name is</h5>
           <h1>
@@ -23,7 +23,7 @@ const Hero = () => {
             </button>
           </a>
         </div>
-      </Bounce>
+      </Fade>
     </section>
   );
 };

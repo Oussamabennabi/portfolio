@@ -1,7 +1,7 @@
 import "./professionalProjects.css"
 import { professionalProjects as projects } from "../../data";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import { Bounce } from "react-reveal";
+import { Fade } from "react-reveal";
 import CoolText from "../ui/CoolText"
 const ProfessionalProjects = () => {
   return (
@@ -9,7 +9,7 @@ const ProfessionalProjects = () => {
       id="professionalProjects"
       className="professionalProjects container"
     >
-      <Bounce bottom>
+      <Fade bottom>
         <div className="content">
           <h2 className="section-header">
           <span className="link-number">02. </span>
@@ -22,7 +22,7 @@ const ProfessionalProjects = () => {
             ))}
           </div>
         </div>
-      </Bounce>
+      </Fade>
     </section>
   );
 }
