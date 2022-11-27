@@ -98,10 +98,10 @@ export const projects = [
 
 export const professionalProjects = [
   {
-    title: "Notify",
+    title: "Notelifyit",
     desc: "I had a lot of fun building this advance markdown note taking app from scratch, the futers of the app : \n you can edit, delete, add notes with diffrent tags by your choice.\nall off your notes will be stored in you local storage.",
     github: "https://github.com/Oussamabennabi/react-note-pad",
-    hosted: "https://notifiy.netlify.app",
+    hosted: "https://notelifyit.netlify.app",
     tools: ["ReactJs", "TypeScript", "React-bootstrap", "LocalStorage", "Vite"],
   },
   {
@@ -109,7 +109,7 @@ export const professionalProjects = [
     desc: "This is a well designed code editor with multiple languages and diffrent themes",
     github: "https://github.com/Oussamabennabi/code-editor",
     hosted: "https://code-and-run.vercel.app",
-    tools: ["ReactJs", "Tailwindcss","npm"],
+    tools: ["ReactJs", "Tailwindcss", "npm"],
   },
   {
     title: "Facebook",
