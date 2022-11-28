@@ -1,11 +1,15 @@
-import React from 'react'
+import React,{useMemo} from 'react'
 
 const CoolText = ({ text}) => {
-    const arr =  Array(text.length)
-    for (let i = 0; i < text.length; i++) {
-        const char = text[i];
-        arr.push(char)
-    }
+  
+  const arr = useMemo(() => {
+     const temp = Array(text.length)
+     for (let i = 0; i < text.length; i++) {
+         const char = text[i];
+         temp.push(char)
+     }
+     return temp
+  }, [text])
     return <>
         { arr.map((char, i) => {
             if (char === " ") {

@@ -13,24 +13,24 @@ import {
 function App() {
   return (
     <>
+      <AnimatedCursor
+        innerSize={5}
+        outerSize={46}
+        innerStyle={{ backgroundColor: "white" }}
+        color="255,255,255"
+        outerAlpha={0.9}
+        innerScale={0}
+        outerScale={1.4}
+        trailingSpeed={3.5}
+        hasBlendMode={true}
+        outerStyle={{
+          mixBlendMode: "exclusion",
+        }}
+      />
       <Navbar />
       <LeftBar />
       <RightBar />
       <main className="App">
-        <AnimatedCursor
-          innerSize={5}
-          outerSize={46}
-          innerStyle={{ backgroundColor: "white" }}
-          color="255,255,255"
-          outerAlpha={0.9}
-          innerScale={0}
-          outerScale={1.4}
-          trailingSpeed={3.5}
-          hasBlendMode={true}
-          outerStyle={{
-            mixBlendMode: "exclusion",
-          }}
-        />
         <Hero />
         <About />
         <ProfessionalProjects />
