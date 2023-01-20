@@ -101,7 +101,7 @@ export const professionalProjects = [
     title: "Gym",
     desc: "",
     github: "https://github.com/Oussamabennabi/Gym-manager-app",
-    hosted: "https://notelifyit.netlify.app",
+    hosted: "https://gym-manager-app.netlify.app",
     tools: ["ReactJs", "TypeScript", "React-bootstrap", "LocalStorage", "Vite"],
   },
   {
