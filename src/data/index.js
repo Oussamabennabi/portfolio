@@ -98,11 +98,11 @@ export const projects = [
 
 export const professionalProjects = [
   {
-    title: "Gym",
-    desc: "",
+    title: "Gym Membership Manager",
+    desc: "this is a simple app that let you control the clients membership, it has a notification system of expired members and uploading photos",
     github: "https://github.com/Oussamabennabi/Gym-manager-app",
     hosted: "https://gym-manager-app.netlify.app",
-    tools: ["ReactJs", "TypeScript", "React-bootstrap", "LocalStorage", "Vite"],
+    tools: ["ReactJs", "melter", "NodeJs", "Material UI"],
   },
   {
     title: "Notelifyit",
