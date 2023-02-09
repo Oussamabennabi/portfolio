@@ -13,7 +13,7 @@ import {
 function App() {
   return (
     <>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={5}
         outerSize={46}
         innerStyle={{ backgroundColor: "white" }}
@@ -26,7 +26,7 @@ function App() {
         outerStyle={{
           mixBlendMode: "exclusion",
         }}
-      />
+      /> */}
       <Navbar />
       <LeftBar />
       <RightBar />
