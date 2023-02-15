@@ -6,7 +6,7 @@ import CoolText from "../ui/CoolText";
 const Projects = () => {
   return (
     <section id="projects" className="container projects">
-      <Fade bottom>
+      <Fade >
         <div className="content">
           <h2 className="section-header">
             <span className="link-number">03. </span>

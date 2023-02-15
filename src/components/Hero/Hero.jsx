@@ -4,7 +4,7 @@ import "./hero.css";
 const Hero = () => {
   return (
     <section id="hero" className="container hero">
-      <Fade bottom>
+      <Fade >
         <div className="content">
           <h5 className="code-font small-text">Hi, my name is</h5>
           <h1>

@@ -48,7 +48,7 @@ const [loading,setLoading] = useState(false)
  
   return (
     <section id="contact" className="container contact">
-      <Fade bottom>
+      <Fade >
         <div className="content">
           <h2 className="section-header">
             <span className="link-number">04. </span>

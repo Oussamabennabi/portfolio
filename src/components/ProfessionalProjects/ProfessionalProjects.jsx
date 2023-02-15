@@ -9,7 +9,7 @@ const ProfessionalProjects = () => {
       id="professionalProjects"
       className="professionalProjects container"
     >
-      <Fade bottom>
+      <Fade >
         <div className="content">
           <h2 className="section-header">
           <span className="link-number">02. </span>

@@ -4,98 +4,104 @@ import Hamburger from "./Hamburger";
 const Navbar = () => {
   const [hidden, setHidden] = useState(true)
   return (
-    <nav className={`${!hidden && "open"}`}>
-      <div className={`${!hidden && "open"} nav-container`}>
-      <a href="/">
-      <div className="logo">
-          <img src="Logo.png" alt="" />
-        </div>
-      </a>
-        
-        <div className="hidden-div"></div>
-        <button title="menu" onClick={() => setHidden(!hidden)}>
-          <Hamburger hidden={hidden} />
-        </button>
-        {/* Desktop links */}
-        <ul className="desktop-links">
-          <li className="link">
-            <a href="#about">
-              <span className={"link-number"}>01.</span> About
-            </a>
-          </li>
+      <nav className={`${!hidden && "open"}`}>
+          <div className={`${!hidden && "open"} nav-container`}>
+              <a href="/">
+                  <div className="logo">
+                      <img src="Logo.png" style={{boderRadius:"20rem"}} alt="" />
+                  </div>
+              </a>
 
-          <li className="link">
-            <a href="#professionalProjects">
-              <span className={"link-number"}>02.</span> Professional Projects
-            </a>
-          </li>
-          <li className="link">
-            <a href="#projects">
-              <span className={"link-number"}>03.</span> Projects
-            </a>
-          </li>
-          <li className="link">
-            <a href="#contact">
-              <span className={"link-number"}>04.</span> Contact
-            </a>
-          </li>
-          <a
-            className=""
-            href="../../files/Oussama_Bennabi_Resume.pdf"
-            download
-          >
-            <button className="primary-button ">
-              <span className="button-text">Resume</span>
-              <div className="shiny-container">
-                <span className="shiny"></span>
-              </div>
-            </button>
-          </a>
-        </ul>
+              <div className="hidden-div"></div>
+              <button title="menu" onClick={() => setHidden(prev=>!prev)}>
+                  <div class={`hamburger ${!hidden && 'active'}`}>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                      <span class="bar"></span>
+                  </div>
+              </button>
+              {/* Desktop links */}
+              <ul className="desktop-links">
+                  <li className="link">
+                      <a href="#about">
+                          <span className={"link-number"}>01.</span> About
+                      </a>
+                  </li>
 
-        {/* Mobile links */}
-      </div>
+                  <li className="link">
+                      <a href="#professionalProjects">
+                          <span className={"link-number"}>02.</span>{" "}
+                          Professional Projects
+                      </a>
+                  </li>
+                  <li className="link">
+                      <a href="#projects">
+                          <span className={"link-number"}>03.</span> Projects
+                      </a>
+                  </li>
+                  <li className="link">
+                      <a href="#contact">
+                          <span className={"link-number"}>04.</span> Contact
+                      </a>
+                  </li>
+                  <a
+                      className=""
+                      href="../../files/Oussama_Bennabi_Resume.pdf"
+                      download
+                  >
+                      <button className="primary-button ">
+                          <span className="button-text">Resume</span>
+                          <div className="shiny-container">
+                              <span className="shiny"></span>
+                          </div>
+                      </button>
+                  </a>
+              </ul>
 
-      <div className={`${!hidden && "open"} nav-container-mobile`}>
-        <ul className={`mobile-links ${!hidden && "open"}`}>
-          <li onClick={() => setHidden(true)} className="link">
-            <a href="#about">
-              <span className={"link-number"}>01.</span> About
-            </a>
-          </li>
-          <li onClick={() => setHidden(true)} className="link">
-            <a href="#professionalProjects">
-              <span className={"link-number"}>02.</span> Professional Projects
-            </a>
-          </li>
-          <li onClick={() => setHidden(true)} className="link">
-            <a href="#projects">
-              <span className={"link-number"}>03.</span> Projects
-            </a>
-          </li>
+              {/* Mobile links */}
+          </div>
 
-          <li onClick={() => setHidden(true)} className="link">
-            <a href="#contact">
-              <span className={"link-number"}>04.</span> Contact
-            </a>
-          </li>
+          <div className={`${!hidden && "open"} nav-container-mobile`}>
+              <ul className={`mobile-links ${!hidden && "open"}`}>
+                  <li onClick={() => setHidden(true)} className="link">
+                      <a href="#about">
+                          <span className={"link-number"}>01.</span> About
+                      </a>
+                  </li>
+                  <li onClick={() => setHidden(true)} className="link">
+                      <a href="#professionalProjects">
+                          <span className={"link-number"}>02.</span>{" "}
+                          Professional Projects
+                      </a>
+                  </li>
+                  <li onClick={() => setHidden(true)} className="link">
+                      <a href="#projects">
+                          <span className={"link-number"}>03.</span> Projects
+                      </a>
+                  </li>
 
-          <a
-            onClick={() => setHidden(true)}
-            className=""
-            href="../../files/Oussama_Bennabi_Resume.pdf"
-            download
-          >
-            <button className="primary-button ">
-              <span className="button-text">Resume</span>
-              <div className="shiny-container">
-                <span className="shiny"></span>
-              </div>
-            </button>
-          </a>
-        </ul>
-      </div>
-    </nav>
+                  <li onClick={() => setHidden(true)} className="link">
+                      <a href="#contact">
+                          <span className={"link-number"}>04.</span> Contact
+                      </a>
+                  </li>
+
+                  <a
+                      onClick={() => setHidden(true)}
+                      className=""
+                      href="../../files/Oussama_Bennabi_Resume.pdf"
+                      download
+                  >
+                      <button className="primary-button ">
+                          <span className="button-text">Resume</span>
+                          <div className="shiny-container">
+                              <span className="shiny"></span>
+                          </div>
+                      </button>
+                  </a>
+              </ul>
+          </div>
+      </nav>
   );
 }
 

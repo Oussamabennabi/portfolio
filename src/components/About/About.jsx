@@ -12,7 +12,7 @@ FaCss3} from "react-icons/fa"
 const About = () => {
   return (
     <section id="about" className="container about">
-      <Fade bottom>
+      <Fade>
         <div className="content">
           <h2 className="section-header">
             <span className="link-number">01. </span>
