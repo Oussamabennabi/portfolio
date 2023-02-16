@@ -7,7 +7,7 @@ const Navbar = () => {
           <div className={`${!hidden ? "open" : ""} nav-container`}>
               <a href="/">
                   <div className="logo">
-                      {/* <img src="Logo.png" style={{boderRadius:"20rem"}} alt="" /> */}
+                      <img src="Logo.svg" style={{boderRadius:"20rem"}} alt="" />
                   </div>
               </a>
 
