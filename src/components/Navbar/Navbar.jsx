@@ -1,25 +1,28 @@
 import { useState } from "react";
 import "./navbar.css"
-import Hamburger from "./Hamburger";
 const Navbar = () => {
   const [hidden, setHidden] = useState(true)
   return (
-      <nav className={`${!hidden && "open"}`}>
-          <div className={`${!hidden && "open"} nav-container`}>
+      <nav className={`${!hidden ? "open" : ""}`}>
+          <div className={`${!hidden ? "open" : ""} nav-container`}>
               <a href="/">
                   <div className="logo">
-                      <img src="Logo.png" style={{boderRadius:"20rem"}} alt="" />
+                      {/* <img src="Logo.png" style={{boderRadius:"20rem"}} alt="" /> */}
                   </div>
               </a>
 
               <div className="hidden-div"></div>
-              <button title="menu" onClick={() => setHidden(prev=>!prev)}>
-                  <div class={`hamburger ${!hidden && 'active'}`}>
-                      <span class="bar"></span>
-                      <span class="bar"></span>
-                      <span class="bar"></span>
-                  </div>
-              </button>
+              
+                  <div
+                      title="menu"
+                      onClick={() => setHidden((prev) => !prev)}
+                      className={`hamburger ${!hidden ? "active" : ""}`}
+                  >
+                      <span className="line"></span>
+                      <span className="line"></span>
+                      <span className="line"></span>
+              </div>
+              
               {/* Desktop links */}
               <ul className="desktop-links">
                   <li className="link">
@@ -61,8 +64,8 @@ const Navbar = () => {
               {/* Mobile links */}
           </div>
 
-          <div className={`${!hidden && "open"} nav-container-mobile`}>
-              <ul className={`mobile-links ${!hidden && "open"}`}>
+          <div className={`${!hidden ? "open" : ""} nav-container-mobile`}>
+              <ul className={`mobile-links ${!hidden ? "open" : ""}`}>
                   <li onClick={() => setHidden(true)} className="link">
                       <a href="#about">
                           <span className={"link-number"}>01.</span> About

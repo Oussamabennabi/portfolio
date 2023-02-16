@@ -132,51 +132,57 @@ nav .logo img {
 
 /* Hamburger */
 
+
 .hamburger {
+  width: 36px;
+  cursor: pointer;
+  
   display: none;
 }
 
-.bar,
+.line,
 .fa-times {
   width: 1.5rem;
   height: 3px;
   display: block;
   color: #fff;
   padding: 0;
-  margin: 6px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #fff;
 }
 
-.bar:nth-child(1) {
+.line:nth-child(1) {
+  width: 30%;
+}
+
+.line:nth-child(2) {
+  width: 65%;
+}
+
+.line:nth-child(3) {
   width: 100%;
 }
 
-.bar:nth-child(2) {
-  width: 200%;
-}
-
-.bar:nth-child(3) {
-  width: 300%;
-}
-
-@media (max-width: 992px) {
+@media (max-width: 980px) {
   .hamburger {
     display: block;
+    z-index: 100;
   }
-  .active .bar:nth-child(2) {
+  .active .line:nth-child(2) {
     opacity: 0;
   }
-  .active .bar:nth-child(1) {
+  .active .line:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(-315deg);
     transform: translateY(8px) rotate(-315deg);
-    width: 300%;
+    width: 100%;
   }
-  .active .bar:nth-child(3) {
+  .active .line:nth-child(3) {
     -webkit-transform: translateY(-10px) rotate(-45deg);
     transform: translateY(-10px) rotate(-45deg);
-    width: 300%;
+    width: 100%;
   }
 
   .active {

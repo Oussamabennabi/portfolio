@@ -7,7 +7,7 @@ const Hero = () => {
       <Fade >
         <div className="content">
           <h5 className="code-font small-text">Hi, my name is</h5>
-          <h1>
+          <h1 className="cool-text">
             <CoolText text={"Oussama Bennabi."} />
           </h1>
           <h2 className="sub-title">I build things for the web.</h2>

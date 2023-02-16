@@ -55,6 +55,8 @@ a {
 button {
   border: none;
   background-color: transparent;
+  cursor: pointer;
+
 }
 
 input,textarea {
@@ -132,7 +134,7 @@ ul {
     font-size: smaller !important;
     }
 }
-.bar .line {
+.bar .bar-line {
     width: 2px;
     height: 5rem;
     background-color: white;
@@ -288,4 +290,8 @@ font-weight: 800 !important;
     font-family: 'IBM Plex Mono', monospace;
   margin-right: .2rem;
   color: var(--green);
+}
+
+.cool-text {
+  cursor: pointer;
 }

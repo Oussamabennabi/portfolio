@@ -1,4 +1,4 @@
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 import "./App.css";
 import {
   Navbar,

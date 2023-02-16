@@ -1,5 +1,6 @@
 
 .project-card {
+    cursor: pointer;
     width: 100%;
     background-color: #fff;
     /* background-color: var(--yellow); */

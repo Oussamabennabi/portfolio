@@ -47,123 +47,128 @@ const [loading,setLoading] = useState(false)
   } 
  
   return (
-    <section id="contact" className="container contact">
-      <Fade >
-        <div className="content">
-          <h2 className="section-header">
-            <span className="link-number">04. </span>
-            <CoolText text={"Lets Talk."} />
-          </h2>
-          <div className="form-container">
-            <form
-              ref={formRef}
-              className="contact-form"
-              onSubmit={handleSubmit}
-            >
-              <div className="error">
-                {error && "There is an Error. Please try again"}
+      <section id="contact" className="container contact">
+          <Fade>
+              <div className="content">
+                  <h2 className="section-header cool-text">
+                      <span className="link-number">04. </span>
+                      <CoolText text={"Lets Talk."} />
+                  </h2>
+                  <div className="form-container">
+                      <form
+                          ref={formRef}
+                          className="contact-form"
+                          onSubmit={handleSubmit}
+                      >
+                          <div className="error">
+                              {error && "There is an Error. Please try again"}
+                          </div>
+                          <label>
+                              <h4>NAME</h4>
+                              <input
+                                  type="text"
+                                  name="user_name"
+                                  id="name"
+                                  ref={nameRef}
+                              />
+                          </label>
+                          <label>
+                              <h4>EMAIL</h4>
+                              <input
+                                  type="email"
+                                  required
+                                  name="user_email"
+                                  id="email"
+                                  ref={emailRef}
+                              />
+                          </label>
+
+                          <label>
+                              <h4>MESSAGE</h4>
+                              <textarea
+                                  required
+                                  name="message"
+                                  id="message"
+                                  ref={messageRef}
+                              />
+                          </label>
+
+                          <button type="submit" className="primary-button">
+                              <span className="button-text">
+                                  {loading ? (
+                                      <Spiner
+                                          style={{
+                                              backgroundColor: "transparent",
+                                              fontSize: "788px",
+                                          }}
+                                      />
+                                  ) : success ? (
+                                      "Done"
+                                  ) : (
+                                      "SHOOT"
+                                  )}
+                              </span>
+                              <div className="shiny-container">
+                                  <span className="shiny"></span>
+                              </div>
+                          </button>
+                      </form>
+
+                      <footer className="contact-footer">
+                          <div className="social-media-icons">
+                              <ul>
+                                  <li title="Github">
+                                      <a
+                                          target={"_blank"}
+                                          rel="noreferrer"
+                                          href="https://github.com/Oussamabennabi"
+                                      >
+                                          <FaGithubAlt fill="#FFFFFF" />
+                                      </a>
+                                  </li>
+                                  <li title="Facebook">
+                                      <a
+                                          target={"_blank"}
+                                          rel="noreferrer"
+                                          href="https://www.facebook.com/Oussama.Ben.Q/"
+                                      >
+                                          <FiFacebook fill="#FFFFFF" />
+                                      </a>
+                                  </li>
+
+                                  <li title="LinkedIn">
+                                      <a
+                                          target={"_blank"}
+                                          rel="noreferrer"
+                                          href="https://www.linkedin.com/in/oussama-bennabi/"
+                                      >
+                                          <FiLinkedin fill="#FFFFFF" />
+                                      </a>
+                                  </li>
+                                  <li>
+                                      <a
+                                          target={"_blank"}
+                                          title="tor"
+                                          href="https://www.frontendmentor.io/profile/Oussamabennabi"
+                                          rel="noreferrer"
+                                      >
+                                          <SiFrontendmentor fill="#FFFFFF" />
+                                      </a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <span className="email-link">
+                              <a href="mailto:oussama.bennabi.work@gmail.com">
+                                  oussama.bennabi.work@gmail.com
+                              </a>
+                          </span>
+
+                          <p>Designed & Built by Oussama Bennabi.</p>
+                      </footer>
+                  </div>
               </div>
-              <label>
-                <h4>NAME</h4>
-                <input type="text" name="user_name" id="name" ref={nameRef} />
-              </label>
-              <label>
-                <h4>EMAIL</h4>
-                <input
-                  type="email"
-                  required
-                  name="user_email"
-                  id="email"
-                  ref={emailRef}
-                />
-              </label>
-
-              <label>
-                <h4>MESSAGE</h4>
-                <textarea
-                  required
-                  name="message"
-                  id="message"
-                  ref={messageRef}
-                />
-              </label>
-
-              <button type="submit" className="primary-button">
-                <span className="button-text">
-                  {loading ? (
-                    <Spiner
-                      style={{
-                        backgroundColor: "transparent",
-                        fontSize: "788px",
-                      }}
-                    />
-                  ) : success ? (
-                    "Done"
-                  ) : (
-                    "SHOOT"
-                  )}
-                </span>
-                <div className="shiny-container">
-                  <span className="shiny"></span>
-                </div>
-              </button>
-            </form>
-
-            <footer className="contact-footer">
-              <div className="social-media-icons">
-                <ul>
-                  <li title="Github">
-                    <a
-                      target={"_blank"}
-                      rel="noreferrer"
-                      href="https://github.com/Oussamabennabi"
-                    >
-                      <FaGithubAlt fill="#FFFFFF" />
-                    </a>
-                  </li>
-                  <li title="Facebook">
-                    <a
-                      target={"_blank"}
-                      rel="noreferrer"
-                      href="https://www.facebook.com/Oussama.Ben.Q/"
-                    >
-                      <FiFacebook fill="#FFFFFF" />
-                    </a>
-                  </li>
-
-                  <li title="LinkedIn">
-                    <a
-                      target={"_blank"}
-                      rel="noreferrer"
-                      href="https://www.linkedin.com/in/oussama-bennabi/"
-                    >
-                      <FiLinkedin fill="#FFFFFF" />
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      target={"_blank"}
-                      title="tor"
-                      href="https://www.frontendmentor.io/profile/Oussamabennabi"
-                      rel="noreferrer"
-                    >
-                      <SiFrontendmentor fill="#FFFFFF" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <span className="email-link">
-                <a href="mailto:oussama.bennabi.work@gmail.com">
-                  oussama.bennabi.work@gmail.com
-                </a>
-              </span>
-
-              <p>Designed & Built by Oussama Bennabi.</p>
-            </footer>
-          </div>
-        </div>
-      </Fade>
-    </section>
+          </Fade>
+      </section>
   );
 }
 
