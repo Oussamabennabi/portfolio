@@ -3,7 +3,7 @@ import { FaRegFolder, FaExternalLinkAlt, FaGithubAlt } from "react-icons/fa";
 import "./projectCard.css"
 const ProjectCard = ({ project, pro }) => {
   return (
-    <article className={`project-card ${pro && "pro"}`}>
+    <article tabIndex={0} className={`project-card ${pro && "pro"}`}>
       <div className="header">
         <div className="icons">
           <button>
