@@ -6,15 +6,15 @@ const ProjectCard = ({ project, pro }) => {
     <article tabIndex={0} className={`project-card ${pro && "pro"}`}>
       <div className="header">
         <div className="icons">
-          <button>
+          <button tabIndex={-1}>
             <FaRegFolder className="file" />
           </button>
           <div>
-            <a href={project.github} target="_blank" rel="noreferrer">
+            <a  tabIndex={-1} href={project.github} target="_blank" rel="noreferrer">
               <FaGithubAlt className="github" />
             </a>
             {project.hosted ? (
-              <a href={project.hosted} target="_blank" rel="noreferrer">
+              <a tabIndex={-1} href={project.hosted} target="_blank" rel="noreferrer">
                 <FaExternalLinkAlt className="external-link" />
               </a>
             ) : (
@@ -22,7 +22,7 @@ const ProjectCard = ({ project, pro }) => {
             )}
           </div>
         </div>
-        <div className="title">
+        <div tabIndex={-1} className="title">
           <a target="_blank" rel="noreferrer" href={project.hosted ? project.hosted : ""}>{project.title}
           </a>
         </div>

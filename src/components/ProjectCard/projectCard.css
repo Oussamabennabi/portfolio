@@ -14,7 +14,7 @@
     justify-content: space-between;
     gap: 1rem;
 }
-.project-card:hover {
+.project-card:hover,.project-card:focus {
     box-shadow: 4px 4px 0 2px var(--black);
     transform: scale(1.02);
 } 
