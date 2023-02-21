@@ -22,8 +22,8 @@ const ProjectCard = ({ project, pro }) => {
             )}
           </div>
         </div>
-        <div tabIndex={-1} className="title">
-          <a target="_blank" rel="noreferrer" href={project.hosted ? project.hosted : ""}>{project.title}
+        <div  className="title">
+          <a  tabIndex={-1} target="_blank" rel="noreferrer" href={project.hosted ? project.hosted : ""}>{project.title}
           </a>
         </div>
         <div className="body">{project.desc}</div>
